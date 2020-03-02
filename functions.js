@@ -25,3 +25,14 @@ function show_bulls_eye(egg) {
   $("#bullseye" + bullseye_num).show();
   hide_bulls_eye(bullseye_num);
 }
+
+function hide_bulls_eye(bullseye_num) {
+  setTimeout(function() {
+    $("#bullseye" + bullseye_num).hide();
+  }, 800);
+}
+
+function decrement_life() {
+  life--;
+  life_span.text(life);
+}
