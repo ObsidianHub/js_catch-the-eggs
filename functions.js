@@ -56,3 +56,12 @@ function update_score() {
   score_span.text(score);
   score_1.text(score);
 }
+
+function stop_the_game() {
+  cancelAnimationFrame(anim_id);
+  restart.slideDown();
+}
+
+restart.click(function() {
+  location.reload();
+});
