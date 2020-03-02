@@ -15,3 +15,13 @@ function check_egg_hits_floor(egg) {
   }
   return false;
 }
+
+function set_egg_to_initial_position(egg) {
+  egg.css("top", egg_initial_position);
+}
+
+function show_bulls_eye(egg) {
+  bullseye_num = egg.attr("data-bullseye");
+  $("#bullseye" + bullseye_num).show();
+  hide_bulls_eye(bullseye_num);
+}
